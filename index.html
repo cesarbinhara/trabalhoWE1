@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de LEADS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>GERENCIADOR DE LEADS</h1>
+    </header>
+    <main>
+        <form id="form" class="form">
+            <h2>Criar Ficha</h2>
+            <input type="text" id="name" placeholder="Nome" required />
+            <input type="text" id="cpf" placeholder="CPF (apenas números)" maxlength="11" required />
+            <textarea id="description" placeholder="Descrição" required></textarea>
+            <select id="status">
+                <option value="Aguardando">Aguardando</option>
+                <option value="Atendimento">Atendimento</option>
+                <option value="Concluído">Concluído</option>
+                <option value="Insucesso">Insucesso</option>
+            </select>
+            <button type="submit">Criar Ficha</button>
+        </form>
+
+        <section id="containers">
+            <div id="Aguardando" class="container"><h3>Aguardando</h3></div>
+            <div id="Atendimento" class="container"><h3>Atendimento</h3></div>
+            <div id="Concluído" class="container"><h3>Concluído</h3></div>
+            <div id="Insucesso" class="container"><h3>Insucesso</h3></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Gerenciador de LEADS</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
